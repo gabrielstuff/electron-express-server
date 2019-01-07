@@ -1,0 +1,28 @@
+doctype html
+//if lt IE 7
+//if IE 7
+//if IE 8
+// [if gt IE 8] <!
+// <![endif]
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title= title
+  meta(name='description' content='')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='http://localhost:4545/css/style.css')
+body
+  h2
+   Electron vue demo served from Electron
+  h1= message
+  //if lt IE 7
+    p.browsehappy
+      | You are using an 
+      strong outdated
+      |  browser. Please 
+      a(href='#') upgrade your browser
+      |  to improve your experience.
+   script(src='' async='' defer='')
+  form(action='/fileUpload', method='post', enctype='multipart/form-data')
+    input(type='file', name='upload')
+    input(type='submit' value='Submit')
